@@ -1,10 +1,11 @@
 import streamlit as st
 import pickle
 import requests
+import os
 
 # Load movie list and similarity matrix
-movies = pickle.load(open("/Volumes/SONY 8GB/movie recomendation/movie_list.pkl", "rb"))
-similarity = pickle.load(open("/Volumes/SONY 8GB/movie recomendation/similarity.pkl", "rb"))
+movies = pickle.load(open("/Users/manikmanavenddram/movie mate/Movie-Mate/movie_list.pkl", "rb"))
+similarity = pickle.load(open("/Users/manikmanavenddram/movie mate/Movie-Mate/similarity.pkl", "rb"))
 
 movie = movies['title'].values
 st.header("Movie Recommendation System")
